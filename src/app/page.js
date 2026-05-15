@@ -1,66 +1,58 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Link from "next/link";
+import { categories } from "@/data/products";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <>
+      <section className="hero">
+        <img 
+          src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=2000&auto=format&fit=crop" 
+          alt="Gym background" 
+          className="hero-bg"
         />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.js file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+        <div className="container hero-content">
+          <h1 className="hero-title">Build Your Dream Home Gym</h1>
+          <p className="hero-subtitle">Premium weight benches, dumbbells, and plyometric boxes engineered for maximum performance and durability.</p>
+          <Link href="/shop" className="btn-primary" style={{ padding: '1rem 2rem', fontSize: '1.125rem' }}>
+            Shop Now
+          </Link>
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      <section className="container" style={{ padding: '5rem 1.5rem' }}>
+        <h2 style={{ textAlign: 'center', marginBottom: '3rem' }}>Shop By Category</h2>
+        <div className="product-grid">
+          {categories.map(category => (
+            <Link href={`/category/${category.slug}`} key={category.id} className="product-card">
+              <img src={category.image} alt={category.name} className="product-image" />
+              <div className="product-info" style={{ textAlign: 'center' }}>
+                <h3 className="product-title">{category.name}</h3>
+                <span className="btn-secondary" style={{ width: '100%' }}>View Products</span>
+              </div>
+            </Link>
+          ))}
         </div>
-      </main>
-    </div>
+      </section>
+      
+      <section className="container" style={{ padding: '2rem 1.5rem 5rem' }}>
+        <div className="glass-panel" style={{ padding: '3rem', textAlign: 'center' }}>
+          <h2>Why Choose Rainbow Print House?</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', marginTop: '2rem' }}>
+            <div>
+              <h3 style={{ color: 'var(--primary)', fontSize: '1.5rem' }}>Premium Quality</h3>
+              <p>Commercial-grade steel and materials designed to last a lifetime.</p>
+            </div>
+            <div>
+              <h3 style={{ color: 'var(--primary)', fontSize: '1.5rem' }}>Fast Shipping</h3>
+              <p>Delivery in 3-7 days anywhere in the US. Standard $9.99 shipping rate.</p>
+            </div>
+            <div>
+              <h3 style={{ color: 'var(--primary)', fontSize: '1.5rem' }}>Secure Checkout</h3>
+              <p>100% secure payments via PayPal SDK with Buyer Protection.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
