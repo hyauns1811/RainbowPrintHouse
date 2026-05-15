@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Shipping Policy | Rainbow Print House",
+  title: "Shipping Policy | FREINDLY HOHAMON SCALE LIMITED",
 };
 
 export default function ShippingPolicy() {
@@ -18,7 +18,7 @@ export default function ShippingPolicy() {
         <p>You will receive a Shipment Confirmation email once your order has shipped containing your tracking number(s). The tracking number will be active within 24 hours.</p>
         
         <h2>Customs, Duties and Taxes</h2>
-        <p>Rainbow Print House is not responsible for any customs and taxes applied to your order. All fees imposed during or after shipping are the responsibility of the customer.</p>
+        <p>FREINDLY HOHAMON SCALE LIMITED is not responsible for any customs and taxes applied to your order. All fees imposed during or after shipping are the responsibility of the customer.</p>
         
         <h2>Damages</h2>
         <p>If you received your order damaged, please contact our support team immediately to file a claim. Please save all packaging materials and damaged goods before filing a claim.</p>

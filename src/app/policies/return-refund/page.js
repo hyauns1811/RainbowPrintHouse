@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Return & Refund Policy | Rainbow Print House",
+  title: "Return & Refund Policy | FREINDLY HOHAMON SCALE LIMITED",
 };
 
 export default function ReturnRefundPolicy() {
@@ -18,7 +18,7 @@ export default function ReturnRefundPolicy() {
         <p>You will be responsible for paying for your own shipping costs for returning your item. Shipping costs are non-refundable. If you receive a refund, the cost of return shipping will be deducted from your refund.</p>
         
         <h2>Contact Us</h2>
-        <p>If you have any questions on how to return your item to us, please contact us at support@rainbowprinthouse.com.</p>
+        <p>If you have any questions on how to return your item to us, please contact us at support@ghiblistores.com.</p>
       </div>
     </div>
   );

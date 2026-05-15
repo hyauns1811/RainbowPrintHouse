@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Contact Us | Rainbow Print House",
-  description: "Get in touch with Rainbow Print House customer support.",
+  title: "Contact Us | FREINDLY HOHAMON SCALE LIMITED",
+  description: "Get in touch with FREINDLY HOHAMON SCALE LIMITED customer support.",
 };
 
 export default function ContactPage() {
@@ -54,26 +54,25 @@ export default function ContactPage() {
               <h3 style={{ marginBottom: '1.5rem' }}>Contact Information</h3>
               <div style={{ marginBottom: '1rem' }}>
                 <strong>Email:</strong><br />
-                support@rainbowprinthouse.com
+                support@ghiblistores.com
               </div>
               <div style={{ marginBottom: '1rem' }}>
                 <strong>Phone:</strong><br />
-                +1 4042100623
+                0782720037
               </div>
               <div>
                 <strong>Hours:</strong><br />
-                Monday - Friday: 9:00 AM - 5:00 PM EST<br />
+                Monday – Friday: 8:30am – 4:45pm EST<br />
                 Saturday - Sunday: Closed
               </div>
             </div>
             
             <div className="glass-panel" style={{ padding: '3rem' }}>
-              <h3 style={{ marginBottom: '1.5rem' }}>Headquarters</h3>
+              <h3 style={{ marginBottom: '1.5rem' }}>Company Information</h3>
               <p>
-                Rainbow Print House<br />
-                6707 W Waters Avenue<br />
-                Tampa, FL 33634<br />
-                United States
+                <strong>Hong Kong Company:</strong> FREINDLY HOHAMON SCALE LIMITED<br />
+                <strong>Address Hong Kong:</strong> SUITE C, LEVEL 7, WORLD TRUST TOWER, 50 STANLEY STREET, CENTRAL, HONG KONG<br />
+                <strong>Business Registration No.</strong> 7 7 9 5 6 2 1 4
               </p>
             </div>
           </div>

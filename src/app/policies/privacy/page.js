@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Privacy Policy | Rainbow Print House",
+  title: "Privacy Policy | FREINDLY HOHAMON SCALE LIMITED",
 };
 
 export default function PrivacyPolicy() {

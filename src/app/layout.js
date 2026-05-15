@@ -4,7 +4,7 @@ import CartIcon from "@/components/CartIcon";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Rainbow Print House | Premium Home Gym Equipment",
+  title: "FREINDLY HOHAMON SCALE LIMITED | Premium Home Gym Equipment",
   description: "Elevate your workout with premium home gym equipment. We offer weight benches, rubber dumbbell sets, and plyometric boxes.",
   icons: {
     icon: '/favicon.png',
@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
               <div className="footer-grid">
                 <div>
                   <Link href="/" style={{ display: 'inline-block' }}>
-                    <img src="/logo.png" alt="Rainbow Print House" style={{ height: '56px', width: 'auto', background: 'white', padding: '4px', borderRadius: '4px' }} />
+                    <img src="/logo.png" alt="FREINDLY HOHAMON SCALE LIMITED" style={{ height: '56px', width: 'auto' }} />
                   </Link>
                   <p style={{ color: '#94a3b8', marginTop: '1rem' }}>Premium home gym equipment to build your ultimate workout space. Durable, reliable, and designed for results.</p>
                 </div>
@@ -62,10 +62,12 @@ export default function RootLayout({ children }) {
                 <div>
                   <h3>Contact</h3>
                   <ul style={{ color: '#94a3b8' }}>
-                    <li>Email: support@rainbowprinthouse.com</li>
-                    <li>Phone: +1 4042100623</li>
-                    <li>Address: 6707 W Waters Avenue, Tampa, FL 33634</li>
-                    <li>Hours: Mon-Fri, 9am-5pm EST</li>
+                    <li>Hong Kong Company: FREINDLY HOHAMON SCALE LIMITED</li>
+                    <li>Address Hong Kong: SUITE C, LEVEL 7, WORLD TRUST TOWER, 50 STANLEY STREET, CENTRAL, HONG KONG</li>
+                    <li>Business Registration No. 7 7 9 5 6 2 1 4</li>
+                    <li>Email: support@ghiblistores.com</li>
+                    <li>Phone: 0782720037</li>
+                    <li>Hours: Monday – Friday 8:30am – 4:45pm EST</li>
                   </ul>
                 </div>
               </div>
@@ -73,7 +75,7 @@ export default function RootLayout({ children }) {
                 <div style={{ marginBottom: '1rem', display: 'flex', justifyContent: 'center' }}>
                   <img src="/paypal-icon.png" alt="Secure Payment with PayPal" style={{ height: '32px' }} />
                 </div>
-                <p>&copy; {new Date().getFullYear()} Rainbow Print House Gym Equipment. All rights reserved.</p>
+                <p>&copy; {new Date().getFullYear()} FREINDLY HOHAMON SCALE LIMITED. All rights reserved.</p>
               </div>
             </div>
           </footer>
